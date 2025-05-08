@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Clone Repository') {
       steps {
-        git url: "${env.REPO_URL}", branch: 'master'
+        git url: "${env.REPO_URL}", branch: 'main'
       }
     }
     stage('Install Dependencies') {
