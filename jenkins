@@ -4,12 +4,12 @@ pipeline {
     nodejs 'NodeJS 23'
   }
   environment {
-    REPO_URL = 'https://github.com/sahildem/jenkin-practice.git'
+    REPO_URL = 'https://github.com/sahildem/pipline-practice.git'
   }
   stages {
     stage('Clone Repository') {
       steps {
-        git url: "${env.REPO_URL}", branch: 'main'
+        git url: "${env.REPO_URL}", branch: 'master'
       }
     }
     stage('Install Dependencies') {
